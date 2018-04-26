@@ -2,9 +2,9 @@
 - Да/Нет (в зависимости от переменной $CityPresence)-->
 
 <context>
-    <input pattern="* связ* * в $CityPresence">
-		<var name="Answer" value="Да" if="full($CityPresence)"/>
-		<var name="Answer" value="Нет" if="empty($CityPresence)"/>
+    <input pattern="* связ* * в $Text">
+		<var name="Answer" value="Да" if="full($Text)"/>
+		<var name="Answer" value="Нет" if="empty($Text)"/>
 		<output value="$Answer"/>
     </input>
 </context>

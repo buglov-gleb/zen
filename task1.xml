@@ -1,10 +1,7 @@
-<!--- А ваша связь есть в [любой город]?
-- Да/Нет (в зависимости от переменной $CityPresence)-->
-
 <context>
-    <input pattern="* связ* * в $Text">
-		<var name="Answer" value="Да" if="full($Text)"/>
-		<var name="Answer" value="Нет" if="empty($Text)"/>
-		<output value="$Answer"/>
-    </input>
+  <pattern name="City" value="(Москв*|Новосибирск*)"/> <!-- Custom pattern -->
+	<input>
+		<pattern value="* связ* * в $City"/> <!-- Input pattern -->
+		<output value="Да"/>
+	</input>
 </context>

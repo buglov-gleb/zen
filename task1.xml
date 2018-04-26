@@ -5,6 +5,5 @@
 		<var name="Answer" value="Да" if="full($City)"/>
 		<var name="Answer" value="Нет" if="empty($City)"/>
 		<output value="$Answer"/>
-		<output value="Да"/>
 	</input>
 </context>

@@ -5,10 +5,10 @@
 	<pattern name="CityPresence" value="entity://cities"/>
     <input pattern="* связ* * в $Text">
         <var name="CityPresence" value="$Text" scope="user"/>
-		<context if="empty($CityPresence)" modal="true">
+		<context if="empty($CityPresence)">
 			<output value="Нет"/>
 		</context>
-		<context if="full($CityPresence)" modal="true">
+		<context if="full($CityPresence)">
 			<output value="Да"/>
 		</context>
     </input>

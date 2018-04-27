@@ -6,7 +6,7 @@
     <input pattern="* связ* * в $Text">
         <var name="CityPresence" value="$Text" scope="user"/>
 		<output value="Да" if="full($CityPresence)"/>
-			<context if="empty($UserName)" modal="true">
+			<context if="empty($CityPresence)" modal="true">
 				<output value="Нет"/>
 			</context>
     </input>
